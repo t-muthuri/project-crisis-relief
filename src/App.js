@@ -1,20 +1,20 @@
 import './App.css';
-import { Button } from '@mui/material';
+import { Button, Container} from '@mui/material';
 import {React, useEffect} from 'react';
 
 function App() {
 //use the useEffect hook
   useEffect(() => {
-    effect
-    return () => {
-      cleanup
+    document.title = "Home"
+    return () => { 
     };
-  }, [input]);
+  }, []);
   
   return (
-    <div className="App">
-      <Button>Hello!</Button>
-    </div>
+    <Container maxWidth="xl">
+      
+    <Button>Hello!</Button>
+    </Container>
   );
 }
 
