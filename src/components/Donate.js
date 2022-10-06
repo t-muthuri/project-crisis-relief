@@ -13,24 +13,6 @@ function Donate() {
   return (
     <div>
         <h1>Donate Page</h1>
-        <Container
-      // add some styling using the M-UI library
-
-      maxWidth="xl"
-      sx={{ background: "#fff" }}
-    >
-      <Button
-        variant="outlined"
-        onClick={() => {
-          alert("clicked");
-        }}
-        size="large"
-        startIcon={<HomeIcon />}
-      >
-        {" "}
-        Donate{" "}
-      </Button>
-    </Container>
     </div>
   );
 }

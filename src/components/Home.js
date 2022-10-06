@@ -12,24 +12,6 @@ function Home() {
   return (
     <div>
         <h1>Home Page</h1>
-        <Container
-      // add some styling using the M-UI library
-
-      maxWidth="xl"
-      sx={{ background: "#fff" }}
-    >
-      <Button
-        variant="outlined"
-        onClick={() => {
-          alert("clicked");
-        }}
-        size="large"
-        startIcon={<HomeIcon />}
-      >
-        {" "}
-        Home{" "}
-      </Button>
-    </Container>
     </div>
   );
 }
