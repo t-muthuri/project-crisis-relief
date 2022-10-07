@@ -20,9 +20,9 @@ function NavBar() {
         >
           <Button
             variant="outlined"
-            onClick={() => {
-              alert("clicked");
-            }}
+            // onClick={() => {
+            //   alert("clicked");
+            // }}
             size="large"
             startIcon={<HomeIcon />}
           >
@@ -33,16 +33,14 @@ function NavBar() {
       </NavLink>
       <NavLink to="/about">
         <Container
-          // add some styling using the M-UI library
-
           maxWidth="xl"
           sx={{ background: "#fff" }}
         >
           <Button
             variant="outlined"
-            onClick={() => {
-              alert("clicked");
-            }}
+            // onClick={() => {
+            //   alert("clicked");
+            // }}
             size="large"
             startIcon={<HomeIcon />}
           >
@@ -53,16 +51,14 @@ function NavBar() {
       </NavLink>
       <NavLink to="/donate">
         <Container
-          // add some styling using the M-UI library
-
           maxWidth="xl"
           sx={{ background: "#fff" }}
         >
           <Button
             variant="outlined"
-            onClick={() => {
-              alert("clicked");
-            }}
+            // onClick={() => {
+              // alert("clicked");
+            // }}
             size="large"
             startIcon={<HomeIcon />}
           >
