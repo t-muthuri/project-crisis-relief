@@ -1,13 +1,8 @@
-// import { Info, InvertColorsRounded, LightModeOutlined } from "@mui/icons-material";
-// import { light } from "@mui/material/styles/createPalette";
-// import { border } from "@mui/system";
-// import { warning } from "@remix-run/router";
-// import { colors } from "@mui/material";
 import { createTheme } from "@mui/material/styles"
 
 export const Colours = {
-    primary: "#5f2c3e",
-    secondary: "#d1adcc",
+    primary: "#43241a",
+    secondary: "#93806e",
     success: "#4caf50",
     info:"#00a2ff",
     danger:"#ff5722",

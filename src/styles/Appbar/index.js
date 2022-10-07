@@ -1,8 +1,8 @@
-import {Colours} from "../theme"
-import {styled} from "@mui/material/styles";
-import {Box, display} from "@mui/system";
-import { Typography } from "@mui/material";
-import "@fontsource/montez"
+import { Colours } from "../theme"
+import { styled } from "@mui/material/styles";
+import { Box } from "@mui/system";
+import { List, Typography } from "@mui/material";
+import "@fontsource/noto-serif-sc"
 
 //container
 export const AppbarContainer = styled(Box)(()=>({
@@ -35,7 +35,23 @@ export const AppbarContainer = styled(Box)(()=>({
 export const AppbarHeader = styled(Typography)(()=>({ //Typography is for titles
     padding: "4px",
     flexGrow: 1,
-    fontSize: "4em",
-    fontFamily: '"montez",  "cursive"',
+    //specifies how much of the remaining space in the flex container should be assigned to the item (flex grow factor)
+    //remaining space = size of the flex container - size of all flex items' sizes together
+    //if all siblings have the same flex grow factor, all items receive the same share of the remaining space otherwise it is distributed according to the ratio defined by the different flex grow factors
+
+    fontSize: "4em", 
+    //change size of header here
+
+    fontFamily: '"noto-serif-sc",  "cursive"',
     color: Colours.secondary,
-}))
+}));
+
+export const MyList = styled (List)(({ type })=>({
+
+    display: type === "row" ? "flex" : "block",
+    //boolean expression used to determine if the display screen size is mobile or desktop size
+
+    flexGrow: 3,
+    justifyContent: "center",
+    alignItems: "center"
+}));

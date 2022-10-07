@@ -31,24 +31,6 @@ function NavBar() {
           </Button>
         </Container>
       </NavLink>
-      <NavLink to="/about">
-        <Container
-          maxWidth="xl"
-          sx={{ background: "#fff" }}
-        >
-          <Button
-            variant="outlined"
-            // onClick={() => {
-            //   alert("clicked");
-            // }}
-            size="large"
-            startIcon={<HomeIcon />}
-          >
-            {" "}
-            About{" "}
-          </Button>
-        </Container>
-      </NavLink>
       <NavLink to="/donate">
         <Container
           maxWidth="xl"
