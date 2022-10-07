@@ -38,7 +38,15 @@ const theme = createTheme({
     secondary:{
         main: Colours.secondary
     }
+    },
+
+    //target the components
+MuiButton: {
+    defaultProps:{
+      disableRipple: true,
+      disableElevation: true
     }
+  }
 
 });
 

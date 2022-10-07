@@ -7,10 +7,12 @@ import About from "./About";
 import Donate from "./Donate";
 import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
+import Appbar from "./appbar";
 
 function App() {
   return (
     <div>
+      <Appbar/>
       <ThemeProvider theme={theme}>
       <Navbar />
       <Routes>
