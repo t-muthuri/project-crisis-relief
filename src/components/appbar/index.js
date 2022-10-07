@@ -1,5 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import Appbardesktop from "./Appbardesktop";
+import Appbarmobile from "./Appbarmobile";
 
 export default function Appbar(){
 
@@ -8,7 +10,8 @@ export default function Appbar(){
 
     return(
         <>
-        {matches ? <h1>MOBILE</h1> : <h1>DESKTOP</h1>}
+        {matches ? <Appbarmobile/> :<Appbardesktop/>}
+        {/* define the prop */}
         </>
 
     );
