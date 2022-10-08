@@ -18,13 +18,27 @@ export const LandingContainer = styled(Box)(() => ({
     }
 }))
 
+export const LandingImage = styled("img")(({src, theme}) => ({
+    // using props
+    src: `url (${src})`,
+    width: "500px",
+    [theme.breakpoints.down("md")]: {
+        width: "350px"
+    },
+
+    [theme.breakpoints.down("sm")]: {
+        width: "320px",
+        height: "300px"
+    }
+}));
+
 export const LandingContent = styled(Box)(() => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     maxWidth: 420,
     //sets the maximum width of an element
-    //overrrides the used value and the width properties. prevents them from becoming larger than the value specified.
+    //overrides the used value and the width properties. prevents them from becoming larger than the value specified.
 
     padding: "30px"
 }));

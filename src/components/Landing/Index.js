@@ -1,6 +1,6 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { LandingContainer, LandingDescription, LandingTitle, LandingContent } from "../../styles/Landing/Index";
+import { LandingContainer, LandingDescription, LandingTitle, LandingContent, LandingImage } from "../../styles/Landing/Index";
 
 function Landing() {
 
@@ -9,6 +9,7 @@ function Landing() {
 
   return (
     <LandingContainer>
+      <LandingImage src="https://thumbs.dreamstime.com/b/volunteer-giving-food-helping-poor-hungry-people-homeless-men-refugees-person-sharing-serving-meal-as-donation-volunteer-243902495.jpg" />
       <LandingContent>
         <Typography variant="h6">
           Taking Action
