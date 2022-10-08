@@ -9,6 +9,7 @@ import theme from "../styles/theme";
 import Navbar from "./navbar";
 import { Container } from "@mui/material"
 import Landing from "./Landing/Index";
+import Statistics from "./statistics";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         }}>
           <Navbar/>
           <Landing />
+          <Statistics />
       {/* <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
