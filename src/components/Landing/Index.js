@@ -1,6 +1,6 @@
-import { Container, useMediaQuery } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { LandingContainer } from "../../styles/Landing/Index";
+import { LandingContainer, LandingDescription, LandingTitle, LandingContent } from "../../styles/Landing/Index";
 
 function Landing() {
 
@@ -9,7 +9,17 @@ function Landing() {
 
   return (
     <LandingContainer>
-      <h1>LAnding</h1>
+      <LandingContent>
+        <Typography variant="h6">
+          Taking Action
+        </Typography>
+        <LandingTitle variant= "h2">
+          COMMUNITY
+        </LandingTitle>
+        <LandingDescription variant="subtitle1">
+          Change by the numbers makes the difference
+        </LandingDescription>
+      </LandingContent>
     </LandingContainer>
   )
 }
