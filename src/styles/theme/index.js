@@ -2,7 +2,15 @@ import { createTheme } from "@mui/material/styles"
 
 export const Colors = {
     primary: "#43241a",
-    secondary: "#93806e",
+    secondary: "#794",
+    //green in behavioral analysis:
+    //renewal and life
+    //makes people feel secure
+    //encourages a balance that leads to decisiveness
+    //in this app green is used to call the visitors and users of the app to action
+    //since the climate change crisis has been the lead cause of adverse weather i.e., leading to prolonged droughts, green here symbolizes a new era.
+    //an era of being sensitive to our environment and being one with Nature.
+
     success: "#4caf50",
     info:"#00a2ff",
     danger:"#ff5722",

@@ -13,7 +13,8 @@ const statistics = [
 export default function Statistics(){
 
     const [textIndex, setTextIndex] = useState(0);
-    //giving a unique index to every text 
+    //giving a unique index to every text
+    
     const [showStatistics, setShowStatistics] = useState (true);
 
     useEffect(() => {
@@ -25,7 +26,7 @@ export default function Statistics(){
         //set an interval
         const intervalId = setInterval(() => {
             setTextIndex ( i => (i + 1) % statistics.length)
-            //leaving the interval at +1 goes above the number of arrays in the statistics hence the % to keep the interval within the length of the array
+            //leaving the interval at +1 goes above the number of items in the array statistics hence adding the % to keep the interval within the length of the array
 
             setShowStatistics(true);
 

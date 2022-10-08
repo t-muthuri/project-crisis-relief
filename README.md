@@ -27,7 +27,7 @@ Project is in a polished, portfolio-quality state. Suggestions for what this can
 
 Does the project work functionally achieving the expected objectives.
 
-Commits are made regularly with clear messages associated with them. Atleast 20 commits.
+-Commits are made regularly with clear messages associated with them. Atleast 20 commits.
 
 -Your app should use at least 5 components in a way that keeps your code well organized.
 
