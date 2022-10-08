@@ -1,10 +1,14 @@
-import { VolunteerActivism, Bloodtype, Person } from '@mui/icons-material'
-import { ListItemButton, ListItemIcon, Divider } from '@mui/material'
-import React from 'react'
-import { MyList } from '../../styles/Appbar'
+import { VolunteerActivism, Bloodtype, Person } from '@mui/icons-material';
+import { ListItemButton, ListItemIcon, Divider } from '@mui/material';
+import React from 'react';
+import { ActionIconsContainerDesktop, ActionIconsContainerMobile, MyList } from "../../styles/Appbar";
 
-function Actions() {
+function Actions({matches}) {
+
+  const Component = matches ? ActionIconsContainerMobile : ActionIconsContainerDesktop;
+
   return (
+    <Component>
     <MyList type = "row">
       <ListItemButton
       sx={{
@@ -22,7 +26,7 @@ function Actions() {
 
       {/* optional element
       usually the divider is horizontal */}
-      
+
       <ListItemButton
       sx={{
         justifyContent: "center",
@@ -50,7 +54,8 @@ function Actions() {
       </ListItemButton>
       <Divider orientation="vertical" flexItem />
     </MyList>
+    </Component>
   )
 }
 
-export default Actions
+export default Actions;

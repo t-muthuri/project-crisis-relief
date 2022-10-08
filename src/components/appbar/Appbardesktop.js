@@ -3,9 +3,10 @@ import { ListItemText, ListItemButton } from "@mui/material";
 import { AppbarContainer, AppbarHeader, MyList } from "../../styles/Appbar";
 import Actions from "./Actions";
 
-function Appbardesktop({matches}) { //pass down the props from the parent component
+function Appbardesktop({matches}) { 
+  //pass down the props from the parent component
+
   return (
-    <>
     <AppbarContainer>
     <AppbarHeader>CRISIS RELIEF</AppbarHeader>
     <MyList type = "row">
@@ -18,9 +19,8 @@ function Appbardesktop({matches}) { //pass down the props from the parent compon
         <SearchIcon />
       </ListItemButton>
     </MyList>
-    <Actions/>
+    <Actions matches={matches}/>
     </AppbarContainer>
-    </>
   )
 };
 

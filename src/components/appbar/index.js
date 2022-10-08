@@ -10,7 +10,7 @@ export default function Appbar(){
 
     return(
         <>
-        {matches ? <Appbarmobile/> :<Appbardesktop/>}
+        {matches ? <Appbarmobile matches={matches}/> :<Appbardesktop matches={matches}/>}
         {/* define the prop */}
         </>
 

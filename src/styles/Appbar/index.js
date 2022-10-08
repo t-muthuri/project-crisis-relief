@@ -55,3 +55,32 @@ export const MyList = styled (List)(({ type })=>({
     justifyContent: "center",
     alignItems: "center"
 }));
+
+export const ActionIconsContainerMobile = styled (Box)(() => ({
+    display: "flex",
+    background: Colours.shaft,
+    position: "fixed",
+    //sets how an element is positioned in a document
+    //fixed - element is removed from the normal document flow, and no space is created for the element in the page layout.
+    
+    bottom: 0,
+
+    //bottom and left determine the final location of positioned element
+
+    left: 0,
+
+    width: "100%",
+    //by default it sets the width of the content area
+
+    alignItems: "center",
+    zIndex: 99,
+    //sets the z-order of a positioned element and its descendants or flex items
+
+    borderTop: "1px solid ${Colours.border}"
+    //shorthand property that sets all the properties of an element's top border
+
+}));
+
+export const ActionIconsContainerDesktop = styled (Box)(() => ({
+    flexGrow: 0
+}));
