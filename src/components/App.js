@@ -8,17 +8,19 @@ import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
 import Navbar from "./navbar";
 import { Container } from "@mui/material"
+import Landing from "./Landing/Index";
 
 function App() {
   return (
     <div>
-      <Navbar/>
       <ThemeProvider theme={theme}>
         <Container 
         maxWidth="xl"
         sx={{
           background: "#fff"
         }}>
+          <Navbar/>
+          <Landing />
       {/* <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
