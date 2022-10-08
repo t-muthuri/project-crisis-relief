@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import { Button, Container } from "@mui/material";
 
-function NavBar() {
+function NavbarRoutes() {
   useEffect(() => {
     document.title = "Home";
     return () => {};
@@ -53,4 +53,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavbarRoutes;

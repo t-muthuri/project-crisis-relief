@@ -1,16 +1,16 @@
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import Appbardesktop from "./Appbardesktop";
-import Appbarmobile from "./Appbarmobile";
+import NavbarDesktop from "./NavbarDesktop";
+import NavbarPhone from "./NavbarPhone";
 
-export default function Appbar(){
+export default function Navbar(){
 
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down("md"));
 
     return(
         <>
-        {matches ? <Appbarmobile matches={matches}/> :<Appbardesktop matches={matches}/>}
+        {matches ? <NavbarPhone matches={matches}/> :<NavbarDesktop matches={matches}/>}
         {/* define the prop */}
         </>
 

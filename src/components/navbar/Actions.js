@@ -1,11 +1,12 @@
 import { VolunteerActivism, Bloodtype, Person } from '@mui/icons-material';
 import { ListItemButton, ListItemIcon, Divider } from '@mui/material';
 import React from 'react';
-import { ActionIconsContainerDesktop, ActionIconsContainerMobile, MyList } from "../../styles/Appbar";
+import { ActionIconsContainerDesktop, ActionIconsContainerPhone, MyList } from "../../styles/Navbar";
+import { Colors } from '../../styles/theme';
 
 function Actions({matches}) {
 
-  const Component = matches ? ActionIconsContainerMobile : ActionIconsContainerDesktop;
+  const Component = matches ? ActionIconsContainerPhone : ActionIconsContainerDesktop;
 
   return (
     <Component>
@@ -18,6 +19,7 @@ function Actions({matches}) {
       sx={{
         display: "flex",
         justifyContent: "center",
+        color: matches && Colors.secondary
       }}>
         <VolunteerActivism/>
       </ListItemIcon>
@@ -35,6 +37,7 @@ function Actions({matches}) {
       sx={{
         display: "flex",
         justifyContent: "center",
+        color: matches && Colors.secondary
       }}>
         <Bloodtype/>
       </ListItemIcon>
@@ -48,6 +51,7 @@ function Actions({matches}) {
       sx={{
         display: "flex",
         justifyContent: "center",
+        color: matches && Colors.secondary
       }}>
         <Person/>
       </ListItemIcon>

@@ -6,13 +6,13 @@ import React from "react";
 // import Donate from "./Donate";
 import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
-import Appbar from "./appbar";
+import Navbar from "./navbar";
 import { Container } from "@mui/material"
 
 function App() {
   return (
     <div>
-      <Appbar/>
+      <Navbar/>
       <ThemeProvider theme={theme}>
         <Container 
         maxWidth="xl"

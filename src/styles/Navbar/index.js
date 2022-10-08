@@ -1,11 +1,11 @@
-import { Colours } from "../theme"
+import { Colors } from "../theme"
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import { List, Typography } from "@mui/material";
 import "@fontsource/noto-serif-sc"
 
 //container
-export const AppbarContainer = styled(Box)(()=>({
+export const NavbarContainer = styled(Box)(()=>({
     display:"flex", 
     //creating a flex container
     //default property is the items display in a row, start from the edge of the main axis, do not stretch but can shrink, will stretch to fill the size of the cross axis, flex-basics is set to auto and the flex-wrap is set to nowrap.
@@ -32,7 +32,7 @@ export const AppbarContainer = styled(Box)(()=>({
 }));
 
 //header
-export const AppbarHeader = styled(Typography)(()=>({ //Typography is for titles
+export const NavbarHeader = styled(Typography)(()=>({ //Typography is for titles
     padding: "4px",
     flexGrow: 1,
     //specifies how much of the remaining space in the flex container should be assigned to the item (flex grow factor)
@@ -43,7 +43,7 @@ export const AppbarHeader = styled(Typography)(()=>({ //Typography is for titles
     //change size of header here
 
     fontFamily: '"noto-serif-sc",  "cursive"',
-    color: Colours.secondary,
+    color: Colors.secondary,
 }));
 
 export const MyList = styled (List)(({ type })=>({
@@ -56,9 +56,9 @@ export const MyList = styled (List)(({ type })=>({
     alignItems: "center"
 }));
 
-export const ActionIconsContainerMobile = styled (Box)(() => ({
+export const ActionIconsContainerPhone = styled (Box)(() => ({
     display: "flex",
-    background: Colours.shaft,
+    background: Colors.shaft,
     position: "fixed",
     //sets how an element is positioned in a document
     //fixed - element is removed from the normal document flow, and no space is created for the element in the page layout.
