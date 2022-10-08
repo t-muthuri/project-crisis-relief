@@ -14,22 +14,42 @@ export default function Statistics(){
 
     const [textIndex, setTextIndex] = useState(0);
     //giving a unique index to every text 
+    const [showStatistics, setShowStatistics] = useState (true);
 
     useEffect(() => {
+
+        setTimeout(() => {
+            setShowStatistics(false)
+        }, 5000);
+
         //set an interval
-        const intervalId = setIntervalId(() => {
+        const intervalId = setInterval(() => {
             setTextIndex ( i => (i + 1) % statistics.length)
             //leaving the interval at +1 goes above the number of arrays in the statistics hence the % to keep the interval within the length of the array
-        })
-    }, 4000);
-    //setting a timer - set time to run every 3 seconds
+
+            setShowStatistics(true);
+
+            setTimeout(() => {
+                setShowStatistics(false)
+            }, 5000);
+
+        }, 3000)
+        //setCount
+        //setting a timer - set time to run every 3 seconds
+        
+        return () => {
+            // cleanup
+            clearInterval (intervalId);
+        };
+    }, []);
+    
 
     return( 
         <StatisticsContainer>
-            <Slide direction = "left" >
+            <Slide direction = "left" in={showStatistics} >
             <Box display={"flex"} justifyContent="center" alignItems={"center"}>
                 <StatisticsText>
-                    {text[textIndex]}
+                    {statistics[textIndex]}
                 </StatisticsText>
             </Box>
             </Slide>
