@@ -7,7 +7,7 @@ import React from "react";
 import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
 import Navbar from "./navbar";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";
@@ -25,6 +25,9 @@ function App() {
           <Navbar />
           <Landing />
           <Statistics />
+          <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
+            <Typography variant = "h4"> Food Donations </Typography>
+          </Box>
           <Donations />
           {/* <Navbar />
       <Routes>
