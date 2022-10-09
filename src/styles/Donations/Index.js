@@ -37,3 +37,18 @@ export const DonationButton = styled(DonationActionButton)(({isButton, theme}) =
         top: 0,
     },
 }));
+
+export const DonationAdd = styled(Button)(({display, time}) => ({
+    //passing two props
+
+    width: "120px",
+    fontSize: "12px",
+    [theme.breakpoints.up("md")]: {
+        position: "absolute",
+        bottom: "2%",
+        width: "300px",
+        padding: "10px 5px",
+    },
+    background: Colors.secondary,
+    opacity: 0.9,
+}))
