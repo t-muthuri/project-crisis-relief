@@ -7,7 +7,7 @@ import React from "react";
 import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
 import Navbar from "./navbar";
-import { Container } from "@mui/material"
+import { Container } from "@mui/material";
 import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";
@@ -16,22 +16,23 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <Container 
-        maxWidth="xl"
-        sx={{
-          background: "#fff"
-        }}>
-          <Navbar/>
+        <Container
+          maxWidth="xl"
+          sx={{
+            background: "#fff",
+          }}
+        >
+          <Navbar />
           <Landing />
           <Statistics />
           <Donations />
-      {/* <Navbar />
+          {/* <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/donate" element={<Donate />} />
       </Routes> */}
-      </Container>
+        </Container>
       </ThemeProvider>
     </div>
   );

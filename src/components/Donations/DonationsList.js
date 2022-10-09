@@ -1,12 +1,16 @@
+import { Donation, DonationImage } from "../../styles/Donations/Index";
+import DonationsMetadata from "./DonationsMetadata";
 
-
-function DonationsList({donation, matches}) {
+function DonationsList({ donation, matches }) {
   return (
-    <div>DonationsList</div>
-  )
+    <Donation>
+      <DonationImage src={donation.image} />
+      <DonationsMetadata donation={donation} matches={matches} />
+    </Donation>
+  );
 }
 
-export default DonationsList
+export default DonationsList;
 
 // Pseudocode
 // what to build

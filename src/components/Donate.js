@@ -3,8 +3,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import { Button, Container } from "@mui/material";
 
 function Donate() {
-
-     //use the useEffect hook
+  //use the useEffect hook
   useEffect(() => {
     document.title = "Home";
     return () => {};
@@ -12,7 +11,7 @@ function Donate() {
 
   return (
     <div>
-        <h1>Donate Page</h1>
+      <h1>Donate Page</h1>
     </div>
   );
 }
@@ -56,7 +55,7 @@ export default Donate;
 // //components React Tree
 
 // //Home Page - Navigation bar/panel
-// //About Page - statistics and call to action 
+// //About Page - statistics and call to action
 // //Donate Page - buttons
 // //Food - items display
 // //Clothes - items display
