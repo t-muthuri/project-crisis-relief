@@ -19,11 +19,13 @@ _Founder of Architecture for Basics Needs.
 
 # setup
 
+run npm start in your terminal
+
 # deliverables
 
 -A well documented readme is the first documentation any developer should use.
 
-Project is in a polished, portfolio-quality state. Suggestions for what this can mean: Intuitive, easy to follow layout. Simple yet polished styling. Form field labels where appropriate. Form fields that are validated correctly, and get cleared after submitting. Detailed, well put together readme. No typos. And much more.
+-Project is in a polished, portfolio-quality state. Suggestions for what this can mean: Intuitive, easy to follow layout. Simple yet polished styling. Form field labels where appropriate. Form fields that are validated correctly, and get cleared after submitting. Detailed, well put together readme. No typos. And much more.
 
 Does the project work functionally achieving the expected objectives.
 

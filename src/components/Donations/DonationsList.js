@@ -1,4 +1,6 @@
-import { Donation, DonationImage } from "../../styles/Donations/Index";
+import { LooksOne } from "@mui/icons-material";
+import { Stack } from "@mui/system";
+import { Donation, DonationButton, DonationImage, DonationMeta } from "../../styles/Donations/Index";
 import DonationsMetadata from "./DonationsMetadata";
 
 function DonationsList({ donation, matches }) {
@@ -6,6 +8,14 @@ function DonationsList({ donation, matches }) {
     <Donation>
       <DonationImage src={donation.image} />
       <DonationsMetadata donation={donation} matches={matches} />
+      <DonationMeta>
+        <Stack direction="column">
+          <DonationButton isOnce={1}>
+            <LooksOne />
+          </DonationButton>
+        </Stack>
+        {/* direction is based on either row or column - responsive design */}
+      </DonationMeta>
     </Donation>
   );
 }

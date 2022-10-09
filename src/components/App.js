@@ -7,7 +7,7 @@ import React from "react";
 import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
 import Navbar from "./navbar";
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";

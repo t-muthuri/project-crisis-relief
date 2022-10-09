@@ -29,9 +29,13 @@ export const DonationActionButton = styled(IconButton)(() => ({
   margin: 4,
 }));
 
-export const DonationButton = styled(DonationActionButton)(
-  ({ isButton, theme }) => ({
-    color: isButton ? Colors.primary : Colors.light,
+export const DonationButton = styled(DonationActionButton, {
+  shouldForwardProp: (prop) => prop !== "isOnce"
+  // shouldForwardProp exists to prevent styling props from being passed down and create invalid attributes
+  
+})(
+  ({ isOnce, theme }) => ({
+    color: isOnce ? Colors.primary : Colors.light,
     [theme.breakpoints.up("md")]: {
       position: "absolute",
       right: 0,
@@ -40,7 +44,7 @@ export const DonationButton = styled(DonationActionButton)(
   })
 );
 
-export const DonationAdd = styled(Button)(({ display, time }) => ({
+export const DonationAdd = styled(Button)(({ display, theme }) => ({
   //passing two props
 
   width: "120px",
