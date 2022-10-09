@@ -1,5 +1,5 @@
 //use this to display statistics or images
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Box } from "@mui/system";
 import { StatisticsContainer, StatisticsText } from "../../styles/statistics";
 import { Slide } from "@mui/material";
@@ -11,6 +11,8 @@ const statistics = [
 ];
 
 export default function Statistics(){
+
+    const containerRef = useRef();
 
     const [textIndex, setTextIndex] = useState(0);
     //giving a unique index to every text
@@ -46,8 +48,12 @@ export default function Statistics(){
     
 
     return( 
-        <StatisticsContainer>
-            <Slide direction = "left" in={showStatistics} >
+        <StatisticsContainer ref={containerRef}>
+            <Slide container={containerRef.current} direction = {showStatistics ? "left": "right" }in={showStatistics}  
+            timeout={{
+                enter: 500,
+                exit:100
+            }}>
             <Box display={"flex"} justifyContent="center" alignItems={"center"}>
                 <StatisticsText>
                     {statistics[textIndex]}

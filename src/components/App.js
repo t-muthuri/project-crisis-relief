@@ -10,6 +10,7 @@ import Navbar from "./navbar";
 import { Container } from "@mui/material"
 import Landing from "./Landing/Index";
 import Statistics from "./statistics";
+import Donations from "./Donations/Index";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Navbar/>
           <Landing />
           <Statistics />
+          <Donations />
       {/* <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
