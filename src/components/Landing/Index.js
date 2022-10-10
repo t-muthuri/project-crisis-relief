@@ -31,4 +31,4 @@ export default Landing;
 // Pseudocode
 // Landing Container
 // Landing Image
-//
+// Routing
