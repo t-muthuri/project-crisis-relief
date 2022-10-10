@@ -29,12 +29,12 @@ export const donations = [
         price: 120,
         image:"https://thumbs.dreamstime.com/b/sticker-cartoon-sugar-bowl-illustrated-146097718.jpg",
     },
-    {
-        id: 6,
-        name: "salt",
-        price: 15,
-        image:"https://media.istockphoto.com/vectors/set-of-salt-vector-id520360238?k=20&m=520360238&s=612x612&w=0&h=DGWiDdnJ5P7K-v02X0BGxlszG8FPNH2Zv6J5IEnA4jQ=",
-    },
+    // {
+    //     id: 6,
+    //     name: "salt",
+    //     price: 15,
+    //     image:"https://media.istockphoto.com/vectors/set-of-salt-vector-id520360238?k=20&m=520360238&s=612x612&w=0&h=DGWiDdnJ5P7K-v02X0BGxlszG8FPNH2Zv6J5IEnA4jQ=",
+    // },
     {
         id: 7,
         name: "beans",
@@ -47,12 +47,12 @@ export const donations = [
         price: 50,
         image:"https://i.pinimg.com/originals/91/ba/3f/91ba3fcaeb6ea996ba64c9a26242ff37.jpg",
     },
-    {
-        id: 10,
-        name: "cannedMeat",
-        price: 120,
-        image:"https://thumbs.dreamstime.com/b/sticker-cartoon-canned-meat-illustrated-146078883.jpg",
-    },
+    // {
+    //     id: 10,
+    //     name: "cannedMeat",
+    //     price: 120,
+    //     image:"https://thumbs.dreamstime.com/b/sticker-cartoon-canned-meat-illustrated-146078883.jpg",
+    // },
     {
         id: 11,
         name: "tealeaves",

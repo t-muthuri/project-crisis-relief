@@ -12,7 +12,7 @@ import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";
 import NavbarRoutes from "./NavbarRoutes";
-import SignUp from "./SignUp/Index";
+import SignUp from "./About/Index";
 
 function App() {
   return (
