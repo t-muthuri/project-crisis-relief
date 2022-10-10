@@ -4,7 +4,7 @@ import { Stack } from '@mui/system';
 import { AboutTitle, SignUpTitle, Subscribe } from '../../styles/About/Index';
 import { Colors } from "../../styles/theme";
 
-function SignUp() {
+function About() {
   return (
     <Box
     sx ={{
@@ -107,4 +107,4 @@ function SignUp() {
   )
 }
 
-export default SignUp;
+export default About;

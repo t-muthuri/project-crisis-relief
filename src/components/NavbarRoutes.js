@@ -1,6 +1,5 @@
 import { React, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Landing from "./Landing/Index";
 
 function NavbarRoutes() {
   useEffect(() => {
@@ -11,7 +10,13 @@ function NavbarRoutes() {
   return (
     <div className="navbar">
       <NavLink to="/">
-            {Landing}
+            Home
+      </NavLink>
+      <NavLink to="/about">
+            About
+      </NavLink>
+      <NavLink to="/donate">
+            Donate
       </NavLink>
     </div>
   );

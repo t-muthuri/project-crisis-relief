@@ -12,7 +12,7 @@ import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";
 import NavbarRoutes from "./NavbarRoutes";
-import SignUp from "./About/Index";
+import About from "./About/Index";
 
 function App() {
   return (
@@ -25,17 +25,21 @@ function App() {
           }}
         >
           <Navbar />
-          {/* <NavbarRoutes/> */}
-          {/* <Routes> */}
-          {/* <Route path="/" element={<Landing />} /> */}
-          <Landing />
-          {/* </Routes> */}
+          <NavbarRoutes/>
+          <Routes>
+          <Route path="/" element={<Landing />} />
+          {/* <Landing /> */}
+          <Route path="/donate" element={<Donations />} />
+          <Route path="/about" element={<About />} />
+          </Routes>
           <Statistics />
           <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
-            <Typography variant = "h4"> Food Donations </Typography>
+            {/* <Typography variant = "h4"> Food Donations </Typography>   */}
           </Box>
-          <Donations />
-          <SignUp/>
+          {/* Box component is in every page to give information on statistics */}
+          
+          {/* <Donations /> */}
+          {/* <About/> */}
         </Container>
       </ThemeProvider>
     </div>
