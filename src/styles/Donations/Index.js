@@ -44,7 +44,9 @@ export const DonationButton = styled(DonationActionButton, {
   })
 );
 
-export const DonationAdd = styled(Button)(({ display, theme }) => ({
+export const DonationAdd = styled(Button, {
+  shouldForwardProp: (prop) => prop !== "view"
+})(({ view, theme }) => ({
   //passing two props
 
   width: "120px",
@@ -55,7 +57,7 @@ export const DonationAdd = styled(Button)(({ display, theme }) => ({
     width: "300px",
     padding: "10px 5px",
     animation:
-      display &&
+      view &&
       `${slideInBottom} 0.5s cubic-bezier(0.250, 0.450, 0.450, 0.940) both`,
   },
   background: Colors.secondary,
@@ -69,12 +71,14 @@ export const DonationMeta = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-export const DonationActions = styled(Box)(({ show, theme }) => ({
+export const DonationActions = styled(Box, {
+  shouldForwardProp: (prop) => prop !== "view"
+})(({ view, theme }) => ({
   [theme.breakpoints.up("md")]: {
-    display: show ? "visible" : "none",
+    display: view ? "visible" : "none",
     position: "absolute",
     right: 0,
     top: "20%",
-    animation: show && `${slideInRight}`,
+    animation: view && `${slideInRight} 0.5s cubic-bezier(0.250, 0.450, 0.450, 0.940) both`,
   },
 }));

@@ -2,6 +2,7 @@ import { Container, Grid, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { donations } from "../../data/donations";
 import DonationsList from "./DonationsList";
+import DonationsListDesktop from "./DonationsListDesktop";
 
 function Donations() {
   const theme = useTheme();
@@ -19,7 +20,9 @@ function Donations() {
       flexDirection={"column"}
       alignItems="center"
     >
-      <DonationsList donation={donation} matches={matches} />
+      {matches ? (<DonationsList donation={donation} matches={matches} />
+      ) : (<DonationsListDesktop donation={donation} matches={matches}/> 
+      )}
     </Grid>
   ));
 
