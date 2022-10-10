@@ -1,5 +1,5 @@
 import React from "react";
-//import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // import { Route, Switch } from "react-router-dom";
 // import Navbar from "./Navbar";
 // import Home from "./Home";
@@ -11,6 +11,8 @@ import { Box, Container, Typography } from "@mui/material";
 import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";
+import NavbarRoutes from "./NavbarRoutes";
+import SignUp from "./SignUp/Index";
 
 function App() {
   return (
@@ -23,18 +25,17 @@ function App() {
           }}
         >
           <Navbar />
+          {/* <NavbarRoutes/> */}
+          {/* <Routes> */}
+          {/* <Route path="/" element={<Landing />} /> */}
           <Landing />
+          {/* </Routes> */}
           <Statistics />
           <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
             <Typography variant = "h4"> Food Donations </Typography>
           </Box>
           <Donations />
-          {/* <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/donate" element={<Donate />} />
-      </Routes> */}
+          <SignUp/>
         </Container>
       </ThemeProvider>
     </div>
