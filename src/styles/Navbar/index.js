@@ -75,8 +75,9 @@ export const ActionIconsContainerPhone = styled(Box)(() => ({
   zIndex: 99,
   //sets the z-order of a positioned element and its descendants or flex items
 
-  borderTop: "1px solid ${Colours.border}",
+  borderTop: `1px solid ${Colors.border}`,
   //shorthand property that sets all the properties of an element's top border
+
 }));
 
 export const ActionIconsContainerDesktop = styled(Box)(() => ({
