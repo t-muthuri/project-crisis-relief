@@ -1,6 +1,7 @@
-import { VolunteerActivism, Bloodtype, Person } from "@mui/icons-material";
+import { VolunteerActivism, Bloodtype, Person, Home } from "@mui/icons-material";
 import { ListItemButton, ListItemIcon, Divider } from "@mui/material";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   ActionIconsContainerDesktop,
   ActionIconsContainerPhone,
@@ -16,6 +17,25 @@ function Actions({ matches }) {
   return (
     <Component>
       <MyList type="row">
+      <NavLink to="/">
+        <ListItemButton
+          sx={{
+            justifyContent: "center",
+          }}
+        >
+          <ListItemIcon
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              color: matches && Colors.secondary,
+            }}
+          >
+            <Home />
+          </ListItemIcon>
+        </ListItemButton>
+        </NavLink>
+        <Divider orientation="vertical" flexItem />
+        <NavLink to="/volunteer">
         <ListItemButton
           sx={{
             justifyContent: "center",
@@ -31,11 +51,13 @@ function Actions({ matches }) {
             <VolunteerActivism />
           </ListItemIcon>
         </ListItemButton>
+        </NavLink>
         <Divider orientation="vertical" flexItem />
 
         {/* optional element
       usually the divider is horizontal */}
 
+<NavLink to="/donate">
         <ListItemButton
           sx={{
             justifyContent: "center",
@@ -51,7 +73,9 @@ function Actions({ matches }) {
             <Bloodtype />
           </ListItemIcon>
         </ListItemButton>
+        </NavLink>
         <Divider orientation="vertical" flexItem />
+        <NavLink to="/about">
         <ListItemButton
           sx={{
             justifyContent: "center",
@@ -67,6 +91,7 @@ function Actions({ matches }) {
             <Person />
           </ListItemIcon>
         </ListItemButton>
+        </NavLink>
         <Divider orientation="vertical" flexItem />
       </MyList>
     </Component>

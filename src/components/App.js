@@ -1,17 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-// import { Route, Switch } from "react-router-dom";
-// import Navbar from "./Navbar";
-// import Home from "./Home";
-// import Donate from "./Donate";
 import { ThemeProvider } from "@mui/system";
 import theme from "../styles/theme";
 import Navbar from "./navbar";
-import { Box, Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 import Landing from "./Landing/Index";
 import Statistics from "./statistics";
 import Donations from "./Donations/Index";
-import NavbarRoutes from "./NavbarRoutes";
 import About from "./About/Index";
 
 function App() {
@@ -25,21 +20,14 @@ function App() {
           }}
         >
           <Navbar />
-          <NavbarRoutes/>
           <Routes>
           <Route path="/" element={<Landing />} />
-          {/* <Landing /> */}
           <Route path="/donate" element={<Donations />} />
           <Route path="/about" element={<About />} />
           </Routes>
           <Statistics />
-          <Box display="flex" justifyContent={"center"} sx={{ p:4 }}>
-            {/* <Typography variant = "h4"> Food Donations </Typography>   */}
-          </Box>
-          {/* Box component is in every page to give information on statistics */}
-          
-          {/* <Donations /> */}
-          {/* <About/> */}
+          {/* Statistics component is in every page to give information on the crisis */}
+
         </Container>
       </ThemeProvider>
     </div>
@@ -47,3 +35,16 @@ function App() {
 }
 
 export default App;
+
+// pseudocode
+
+//components React Tree
+
+//Home Page - Navigation bar/panel
+//About Page - statistics and call to action
+//Donate Page - buttons
+//Food - items display
+//Clothes - items display
+//Shelter - items display
+
+//data Folder - img urls and information

@@ -4,6 +4,7 @@ import { Colors } from "../theme";
 
 export const AboutTitle = styled(Typography)(() => ({
     textTransform: "uppercase",
+    fontFamily: "noto-serif-sc",
     //converting all characters to uppercase
     
     marginBottom: "1em"

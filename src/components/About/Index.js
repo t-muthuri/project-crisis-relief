@@ -1,26 +1,26 @@
 import { Facebook, Instagram, Send, Twitter } from '@mui/icons-material';
 import { Box, Button, Grid, List, ListItemText, Typography } from '@mui/material';
 import { Stack } from '@mui/system';
-import { AboutTitle, SignUpTitle, Subscribe } from '../../styles/About/Index';
+import { AboutTitle, Subscribe } from '../../styles/About/Index';
 import { Colors } from "../../styles/theme";
 
 function About() {
   return (
     <Box
     sx ={{
-      background: Colors.shaft,
-      color: Colors.white,
       p: {xs: 4, md: 10},
+      p: {xs: 10, md: 16},
+
       //doing mediaquery within the xs prop
 
-      pt: 12,
-      pb: 12,
-      fontSize: {xs: "12px", md: "14px"},
+      fontSize: {xs: "20px", md: "24px"},
     }}
     >
     <Grid container spacing={2} justifyContent="center">
-      <Grid item md={6} lg={4}></Grid>
-        <AboutTitle variant = "body1">About us</AboutTitle>
+      <Grid 
+      // item md={6} lg={4}
+      >
+        <AboutTitle variant = "body1" fontSize={"24px"}>About us</AboutTitle>
         <Typography variant="caption2">
         It is famously said that it takes a community to make a change. 
         I hope that it takes an app to empower the community.
@@ -37,9 +37,10 @@ function About() {
           <Twitter sx={{ mr: 1 }} />
           <Instagram />
         </Box>
+        </Grid>
     </Grid>
-    <Grid item md ={6} lg={2}>
-      <AboutTitle variant='body1'>information</AboutTitle>
+    <Grid item md ={6} lg={2} >
+      <AboutTitle variant='body1' fontSize={"24px"}>information</AboutTitle>
       <List>
         <ListItemText>
           <Typography lineHeight={2} variant="caption2">
@@ -65,7 +66,7 @@ function About() {
       </List>
     </Grid>
     <Grid item md ={6} lg={2}>
-      <AboutTitle variant="body1">signup</AboutTitle>
+      <AboutTitle variant="body1" fontSize={"24px"}>signup</AboutTitle>
       <List>
         <ListItemText>
           <Typography lineHeight={2} variant="caption2">
