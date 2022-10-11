@@ -1,5 +1,7 @@
-import { Typography, useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Typography, 
+  // useMediaQuery
+ } from "@mui/material";
+// import { useTheme } from "@mui/material/styles";
 import {
   LandingContainer,
   LandingDescription,
@@ -9,8 +11,8 @@ import {
 } from "../../styles/Landing/Index";
 
 function Landing() {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
+  // const theme = useTheme();
+  // const matches = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <LandingContainer>

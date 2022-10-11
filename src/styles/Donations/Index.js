@@ -1,5 +1,5 @@
 import { Box, styled } from "@mui/system";
-import theme, { Colors } from "../theme";
+import { Colors } from "../theme";
 import { Button, IconButton } from "@mui/material";
 import { slideInBottom, slideInRight } from "../../animation/Index";
 

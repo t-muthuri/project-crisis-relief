@@ -8,7 +8,6 @@ import {
   DonationAdd,
   DonationButton,
   DonationImage,
-  DonationMeta,
 } from "../../styles/Donations/Index";
 import DonationsMetadata from "./DonationsMetadata";
 

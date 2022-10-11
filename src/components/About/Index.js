@@ -9,7 +9,7 @@ function About() {
     <Box
     sx ={{
       p: {xs: 4, md: 10},
-      p: {xs: 10, md: 16},
+      // p: {xs: 10, md: 16},
 
       //doing mediaquery within the xs prop
 
